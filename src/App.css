@@ -1,0 +1,223 @@
+.body {
+ margin: 0;
+ padding: 0;
+ font-size: 16px;
+ min-width: 320px;
+ text-align: center;
+}
+
+/* SHOP BLOCK */
+.shop-block {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.item {
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 48%;
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+}
+
+.item:hover {
+  border: 1px solid rgb(216, 210, 210);
+}
+
+.item-header {
+  margin: 0.2rem 0.1rem 0.3rem 0.1rem;
+  padding: 0;
+  font-size: 0.9rem;
+}
+
+.item-pic {
+  width: 100%;
+  object-fit: cover;
+  background: grey;
+}
+
+.item-colour {
+  margin: 0;
+  padding: 0;
+  font-size: 0.7rem;
+}
+
+.item-price {
+  margin: 0.2rem 0;
+  padding: 0;
+  font-size: 1rem;
+}
+
+.old-price {
+  color: grey;
+  text-decoration: line-through;
+}
+
+.item-stock {
+  margin: 0 0 0.3rem 0;
+  padding: 0;
+}
+
+.item-category {
+  margin: 0 0 0.2rem 0;
+  padding: 0;
+  font-size: 0.6rem;
+}
+
+.add-btn {
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+
+
+/* CART  */
+.cart {
+  padding: 10px;
+  border: 1px solid grey;
+}
+
+.cart-header {
+  margin: 0;
+  padding: 0.2rem;
+  font-size: 1rem;
+  text-align: right;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid grey;
+  align-items: center;
+}
+
+.cart-item-pic {
+  object-fit: cover;
+  background: grey;
+}
+
+.cart-item-name {
+  margin-right: 1rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.cart-item-colour {
+  margin-right: 1rem;
+  font-size: 0.7rem
+}
+
+.cart-item-category {
+  font-size: 0.6rem
+}
+
+.cart-item-price {
+  margin: 0 0.5rem 0 0;
+}
+
+.price-wrapper {
+  display: flex;
+}
+
+.delete-btn {
+  align-self: center;
+}
+
+/* DISCOUNT BLOCK */
+.discount-block {
+  margin: 1rem 0 0 0;
+}
+
+.discount-label {
+  font-size: 0.8rem;
+}
+
+/* VOUCHERS BLOCK */
+.vouchers-block {
+  /* position: relative; */
+  padding: 10px;
+  font-size: 0.9rem;
+}
+
+.vouchers-list {
+  padding: 0;
+}
+
+.voucher {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  font-size: 0.8rem;
+  text-align: left;
+}
+
+.voucher-code {
+  font-size: 0.9rem
+}
+
+/* .close-vouchers-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+} */
+
+.error {
+  display: block;
+  color: red;
+}
+
+.collapsed {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+.hidden {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .item {
+    width: 31%
+  }
+
+  .item-pic {
+    height: 300px;
+  }
+
+  .cart-item-wrap {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    /* align-content: left; */
+    width: 70%;
+  }
+
+  .wrap1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 80%;
+  }
+
+  .cart-item-category {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .item {
+    width: 23%
+  }
+
+  /* .cart-item {
+    justify-content: flex-start;
+  } */
+
+
+}
